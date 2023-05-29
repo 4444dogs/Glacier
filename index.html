@@ -46,7 +46,9 @@
     .fleet,
     .flights,
     .staff,
-    .contact {
+    .contact,
+    .upcoming,
+    .about {
       background-color: #f5faff;
       border: 1px solid #e6eef5;
       border-radius: 5px;
@@ -78,11 +80,22 @@
       color: #999;
       font-size: 12px;
     }
+
+    .calendar {
+      max-width: 100%; /* Ensures the container doesn't exceed the viewport width */
+      overflow: hidden; /* Prevents horizontal scrolling */
+    }
+
+  .calendar iframe {
+    width: 100%; /* Sets the iframe width to 100% of the container */
+    height: 100vh;
+    border: none; /* Optional: Removes the iframe border */
+  }
   </style>
 </head>
 <body>
   <header>
-    <h1>Glacier Airlines</h1>
+    <h1>Glacier Airlines - Connecting YOU to remote destinations since 2023</h1>
   </header>
   
   <div class="route-map-container">
@@ -92,8 +105,13 @@
     </div>
   </div>
   
+  <div class="about">
+    <h2>About Us</h2>
+    <p>Glacier Airlines is a fictional airline that operates in the roblox game "Pilot Training Flight Simulator" that connects you to remote destinations such as Lukla and Saba. You may see us mostly in public servers but sometimes we do more professional flights that are livestreamed on YouTube and hosted in a private server.</p>
+  </div>
+
   <div class="fleet">
-    <h2>Our Fleet:</h2>
+    <h2>Our Fleet</h2>
     <ul>
       <li>20 DHC-6 Twin Otter</li>
       <li>10 CRJ700</li>
@@ -104,7 +122,7 @@
   </div>
   
   <div class="flights">
-    <h2>Our Normal Flights:</h2>
+    <h2>Our Normal Flights</h2>
     <ul>
       <li>Lukla - Saba (Once per week, DHC-6)</li>
       <li>Lukla - Al Najaf (Once per day, DHC-6)</li>
@@ -120,10 +138,11 @@
       <li>Al Najaf - Skopelos (Once per week, DHC-6)</li>
       <li>Paphos - Skopelos (Once per week, DHC-6)</li>
     </ul>
+    <p class="disclaimer">Schedules for flights are purely roleplay. Staff are allowed to run any of these fligths regardless of the schedule.</p>
   </div>
   
   <div class="flights">
-    <h2>Our Oil Rig Flights:</h2>
+    <h2>Our Oil Rig Flights</h2>
     <ul>
       <li>Oil Rig - Waterloo (DHC-6 Seaplane)</li>
       <li>Oil Rig - Tavaro (DHC-6 Seaplane)</li>
@@ -132,7 +151,7 @@
   </div>
   
   <div class="staff">
-    <h2>Our Staff:</h2>
+    <h2>Our Staff</h2>
     <ul>
       <li>Captains: TransportNerd</li>
       <li>Co-Pilots: rofffing67 (Coming Soon)</li>
@@ -146,7 +165,15 @@
     <p>Glacier Airlines provides charter services to content creator partners, staff, and select other passengers.</p>
     <p class="disclaimer">Please note: All charter flights are operated by a Bombardier Learjet. Charters can only go to places that Glacier Airlines normally flies to, with the exception of Sea Haven, Waterloo, Oil Rig, and Tavaro.</p>
   </div>
-  
+
+  <div class="upcoming">
+    <h2>Upcoming Flights</h2>
+    <p>The calendar below shows all public scheduled flights operated by Glacier Airlines.</p>
+    <div class="calendar">
+      <iframe src="https://teamup.com/ksugo3h9gn5zpty9mt?showProfileAndInfo=0&showSidepanel=1&showAgendaHeader=1&showAgendaDetails=0&showYearViewHeader=1"></iframe>
+    </div>
+    <p class="disclaimer">Please Note: Our crew are permitted to run flights in public servers that aren't scheduled. This means that the majority of our flights are NOT on this calendar.</p>
+    
   <footer>
     &copy; 2023 Glacier Airlines. All rights reserved.
   </footer>
